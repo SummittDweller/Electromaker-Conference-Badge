@@ -17,11 +17,6 @@ def image(file):
     inkyphat.set_image(Image.open(file))
     inkyphat.show()
 
-def container():
-    inkyphat.rectangle((0,0,212,104),inkyphat.RED)
-    inkyphat.rectangle((4,4,208,100),inkyphat.BLACK)
-    inkyphat.show()
-
 def cleaner():
     colours = (inkyphat.RED, inkyphat.BLACK, inkyphat.WHITE)
     for j, c in enumerate(colours):
@@ -34,11 +29,9 @@ def cleaner():
 
 while True:
     image("electromaker-edit.png")
-    #container()
     inkyphat.clear()
     text("@biglesp",inkyphat.BLACK)
     sleep(5)
-    #container()
     inkyphat.clear()
     text("http://bigl.es", inkyphat.BLACK)
     sleep(5)
