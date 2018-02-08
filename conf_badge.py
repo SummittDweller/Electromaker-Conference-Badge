@@ -19,7 +19,7 @@ def image(file):
 
 def cleaner():
     colours = (inkyphat.RED, inkyphat.BLACK, inkyphat.WHITE)
-    for j, c in enumerate(colours):
+    for c in enumerate(colours):
         inkyphat.set_border(c)
         for x in range(inkyphat.WIDTH):
             for y in range(inkyphat.HEIGHT):
